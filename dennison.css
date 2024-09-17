@@ -1,0 +1,238 @@
+.marquee-container {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/* Styles for the scrolling text */
+.marquee-text {
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    animation: marquee 10s linear infinite;
+}
+
+/* Animation for scrolling effect */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+     .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #15203f;
+    color: white;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Needed for absolute positioning of the toggle button */
+}
+
+.nav-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.nav-item img {
+    vertical-align: middle;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+/* Media query for tablets and small screens */
+@media (max-width: 768px) {
+    .nav-left {
+        display: none; /* Hide left-side items by default on smaller screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        z-index: 1000;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-item img {
+        height: 40px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px;
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button on smaller screens */
+    }
+
+    .nav-toggle.active + .nav-container .nav-left {
+        display: flex; /* Show the navigation menu when the toggle button is active */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .nav-item {
+        margin: 0 5px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+        .carousel-inner img{
+            height: 100%;
+            width: 100%;
+        }
+        .afs{
+            border-color:  #bc521d;
+        }
+
+
+        .jhj{
+             display: grid;
+             grid-template-columns: auto auto auto auto;
+              grid-gap:20px;
+              
+           } 
+           .jhj img{
+            border-radius: 30px; 
+           
+            
+           }
+           .jhj img:hover{
+            box-shadow: 10px 10px 12px grey;
+           }
+           .ass{
+            text-decoration: line-through;
+            font-size: 15px;
+        }
+        .ass span{
+            display: inline-block;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+.ana{
+    color: red;
+}
+.a23{
+            display: grid;
+             grid-template-columns: auto auto auto ;
+              grid-gap:5px;
+              
+
+
+           }
+           .a23 img:hover{
+            box-shadow: 10px 10px 12px grey;
+           }
+           .a23 img{
+            border-radius: 20px;
+           }
+           .rim{
+            display: grid;
+             grid-template-columns: auto auto auto ;
+              grid-gap:5px;
+            }
+
+
+            .footer{
+    background: #15203f;
+    color: white;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+    gap: 5px;
+    text-align: center;
+    
+    padding: 30px 0;
+}
+footer.li{
+    list-style: none;
+    text-align: left;
+   
+  
+
+}
+.form-control{
+    background-color: #15203f; 
+}
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
